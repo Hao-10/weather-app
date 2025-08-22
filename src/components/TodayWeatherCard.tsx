@@ -45,7 +45,7 @@ const TodayWeatherCard =({dt,description,icon,temp,cityname,showWeatherLeft,isFa
           </div>
 
           <div className="flex items-center gap-2 mr-5 max-xl:mr-0">
-            <img src="/img/clock1.png" alt="clock-img" className="w-16 max-2xl:w-14 max-sm:!w-10 max-xl:hidden max-lg:!block" />
+            <img src={`${import.meta.env.BASE_URL}img/clock1.png`} alt="clock-img" className="w-16 max-2xl:w-14 max-sm:!w-10 max-xl:hidden max-lg:!block" />
             <div>
               <p className="text-base max-2xl:text-[13px] max-lg:!text-[17px]">時間</p>
               <p className="todayWeatherFont max-2xl:text-xl max-sm:!text-lg">{format3HourPeriod(dt)}</p>
