@@ -45,7 +45,7 @@ const FavoritesWrapper=({favoriteCity,setFavoriteCity,fetchForecast}:FavoriteCit
     return(
         <div className="w-full mt-4 min-h-[430px]">
             <div className="w-full p-4 flex flex-col justify-between border-2 border-gray-300 rounded-3xl bg-gray-100 dark:bg-gray-700 dark:border-gray-500">
-                <div className="min-h-[340px] grid grid-cols-[repeat(auto-fit,minmax(300px,1fr))] gap-10 mb-2 ">
+                <div className="min-h-[340px] grid grid-cols-[repeat(auto-fit,minmax(300px,1fr))] gap-5 mb-2 ">
                     {currentCities.map((city) => (
                         <FavoritesCard key={city} city={city} weatherData={favoriteData[city]} favoriteCity={favoriteCity} setFavoriteCity={setFavoriteCity} fetchForecast={fetchForecast}/>
                     ))}
