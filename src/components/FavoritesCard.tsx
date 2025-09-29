@@ -22,7 +22,7 @@ const FavoritesCard=({city,fetchForecast,weatherData,favoriteCity,setFavoriteCit
             top: 0,
             behavior: "smooth",
           });
-        }, 300);
+        }, 200);
       };
 
       const handleClick_RemoveFavorite = () => {

@@ -187,7 +187,7 @@ const WeatherAppMain = () =>{
                             top: 0,
                             behavior: "smooth",
                           });
-                        }, 300);
+                        }, 200);
                       }}
                       selectedDate={selectedDate}
                   />
