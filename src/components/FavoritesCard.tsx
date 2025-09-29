@@ -17,6 +17,12 @@ const FavoritesCard=({city,fetchForecast,weatherData,favoriteCity,setFavoriteCit
 
     const handleClick = () => {
         fetchForecast(city);
+        setTimeout(() => {
+          window.scrollTo({
+            top: 0,
+            behavior: "smooth",
+          });
+        }, 300);
       };
 
       const handleClick_RemoveFavorite = () => {

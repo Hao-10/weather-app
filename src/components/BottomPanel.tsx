@@ -25,7 +25,7 @@ const BottomPanel=({children,forecastType,setFavoriteCity,setForecastType,favori
         setShowFavorites((prev) => !prev);
       };
     return (
-        <div className="w-full flex-col justify-between items-center mt-10 border-8 border-white rounded-3xl bg-white shadow-[2px_2px_6px_rgba(0,0,0,0.4)] dark:bg-gray-700 dark:border-gray-700 dark:shadow-[2px_2px_6px_rgba(0,0,0,0.8)]">
+        <div className="w-full flex-col justify-between items-center mt-7 border-8 border-white rounded-3xl bg-white shadow-[2px_2px_6px_rgba(0,0,0,0.4)] dark:bg-gray-700 dark:border-gray-700 dark:shadow-[2px_2px_6px_rgba(0,0,0,0.8)]">
             <div className="w-full p-2 bg-white dark:bg-gray-700">
                 <nav className="relative w-full flex justify-center text-gray-500 border-2 rounded-3xl border-gray-300 bg-white font-bold overflow-hidden dark:bg-gray-700 dark:text-gray-300 dark:border-gray-500" aria-label="預報切換">
                     <span
@@ -39,7 +39,7 @@ const BottomPanel=({children,forecastType,setFavoriteCity,setForecastType,favori
                 </nav>
             </div>
             {showFavorites ? (<FavoritesWrapper favoriteCity={favoriteCity} setFavoriteCity={setFavoriteCity} fetchForecast={fetchForecast}/>):
-            <div className='flex max-lg:flex-col max-3xl:flex-wrap justify-start max-lg:justify-center items-center w-full max-3xl:min-h-[431px] mt-4 gap-10 max-xl:gap-7 max-lg:!gap-10 p-4 border-2 border-gray-300 rounded-3xl bg-gray-100 dark:bg-gray-700 dark:border-gray-600'>
+            <div className='flex max-lg:flex-col max-3xl:flex-wrap justify-start max-lg:justify-center items-center w-full max-3xl:min-h-[431px] mt-3 gap-10 max-xl:gap-7 max-lg:!gap-10 p-4 border-2 border-gray-300 rounded-3xl bg-gray-100 dark:bg-gray-700 dark:border-gray-600'>
                 {children}
             </div>}
         </div>
