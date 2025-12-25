@@ -1,4 +1,4 @@
-# Weather App - 天氣預報 Web 應用
+# 🌥️ Weather App - 天氣預報 Web 應用
 
 本專案是一個使用 **React + TypeScript + Vite + Tailwind CSS** 開發的天氣預報 Web 應用。  
 透過串接第三方天氣 API，即時取得天氣資料，並提供多種功能如：
