@@ -125,7 +125,7 @@ const WeatherAppMain = () =>{
     }, []);
 
     return(
-      <div className="w-full h-auto p-5 max-lg:p-0 bg-gray-100 shadow-[2px_2px_6px_rgba(0,0,0,0.4)] dark:bg-gray-600">
+      <div className="w-full min-h-screen p-5 max-lg:p-0 bg-gray-100 shadow-[2px_2px_6px_rgba(0,0,0,0.4)] dark:bg-gray-600">
           <Navbar setCity={setCity} city={city} fetchForecast={fetchForecast} cityname={forecast?.city.name ?? ""} setFavoriteCity={setFavoriteCity} isFavorite={isFavorite} isDark={isDark} setIsDark={setIsDark}/>
           <div className="flex max-lg:flex-col max-lg:justify-center max-lg:items-center w-full h-56 max-lg:h-auto my-5">
               {forecast && forecast.list && (
